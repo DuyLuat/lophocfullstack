@@ -75,6 +75,7 @@ input:focus, input:active {
     border: none;
     background-color: #6d4a70;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #login-btn a {
