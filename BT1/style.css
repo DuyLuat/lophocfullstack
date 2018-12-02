@@ -16,6 +16,8 @@ body {
     border-radius: 5px;
 }
 
+
+
 #header {
     height: 63px;
     background-color: #6d4a70;
@@ -56,11 +58,11 @@ body {
 }
 
 #username input {
-    background:  #f0eef0 url('img/User.png') no-repeat right 15px center;
+    background: #f0eef0 url('img/User.png') no-repeat right 15px center;
 }
 
 #password input {
-    background:  #f0eef0 url('img/password.png') no-repeat right 15px center;
+    background: #f0eef0 url('img/password.png') no-repeat right 15px center;
 }
 
 input:focus, input:active {

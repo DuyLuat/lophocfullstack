@@ -36,6 +36,7 @@
     float: left;
     display: block;
     margin-bottom: 20px;
+    
 }
 
 
@@ -68,9 +69,12 @@
 #play {
     padding: 10px 25px;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     font-weight: bold;
     border-radius: 3px;
     border:none;
     background-color: cadetblue;
+}
+.clear {
+    clear: both;
 }
