@@ -7,6 +7,14 @@ body {
     font-family: roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .section {
     width: 100%;
 }
@@ -44,11 +52,76 @@ body {
 }
 
 #navbar #logo a, #navbar #menu ul li a {
-    
     color: white;
     text-decoration: none;
 }
 
 #navbar #logo a:hover, #navbar #menu ul li a:hover {
     color: #ff7f7b;
+}
+
+#intro {
+    padding-top: 195px;
+}
+
+#intro img#bvn_picture {
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 100px;
+}
+
+#header {
+    background: #313144 url('img/header-bg.jpg') no-repeat center center;
+    height: 665px;
+    background-size: cover;
+}
+
+#info h1 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 38px;
+}
+
+#info h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 33px;
+}
+
+#info p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 42px;
+}
+
+#info a#contactme {
+    padding: 10px 30px;
+    color: #2e2e2e;
+    background-color: #c9c9c9;
+    text-decoration: none;
+}
+
+#info ul li {
+    display: inline;
+    margin-right: 20px;
+    float: left;
+}
+
+#info ul li a {
+    list-style-type: none;
+    color: #2e2e2e;
+    font-weight: bold;
+}
+
+#info ul li:first-child {
+    padding: 18px 32px;  
+    background-color: #c9c9c9;
+    text-decoration: none;
+    display: inline;
+}
+
+#info ul li:first-child:hover {
+    background-color: #a3a3a3;
 }
