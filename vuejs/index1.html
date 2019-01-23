@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+    <h1>Student Manager</h1>
+    <div id="student-manager">
+               <table border="1px">
+               <tr>
+                   <th>name</th>
+                   <th>age</th>
+                   <th>address</th>
+                   <th>action</th>
+            </tr>
+               <tr v-for="student in students">
+                   <td><span v-show="student.showEdit==false">{{student.name}}</span>
+                    <input v-model=student.name v-show="student.showEdit==true" type="text">
+                </td>
+                   <td><span v-show="student.showEdit==false">{{student.age}}</span>
+                    <input v-model=student.age v-show="student.showEdit==true" type="text">
+                </td>
+                   <td><span v-show="student.showEdit==false">{{student.address}}</span>
+                    <input v-model=student.address v-show="student.showEdit==true" type="text">
+                </td>
+                   <td>
+                       <button @click="student.showEdit=!student.showEdit">
+                          <span v-show="student.showEdit==false"> Edit</span> 
+                          <span v-show="student.showEdit==true"> Save</span> 
+                        </button>
+                       <button>Dell</button>
+                </td>
+            </tr>
+           
+           </table>
+ <button>Add Student</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+</body>
+</html>
