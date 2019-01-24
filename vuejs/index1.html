@@ -31,12 +31,12 @@
                           <span v-show="student.showEdit==false"> Edit</span> 
                           <span v-show="student.showEdit==true"> Save</span> 
                         </button>
-                       <button>Dell</button>
+                       <button  @click="students.splice(students.indexOf(student),1)">Dell</button>
                 </td>
             </tr>
            
            </table>
- <button>Add Student</button>
+ <button @click="students.push({name:'', age: '', address:'', showEdit:true})">Add Student</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="vue.js"></script>
